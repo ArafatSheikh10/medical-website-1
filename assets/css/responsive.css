@@ -278,6 +278,10 @@
         width: 12px;
     }
 
+    .header_top_right ul li a i{
+        font-size: 12px;
+    }    
+
     .logo_img img {
         width: 90px;
     }
