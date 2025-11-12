@@ -214,16 +214,15 @@
     }
 
     .header_area-info ul {
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .header_area-info ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: grid;
+        display: flex;
         align-items: center;
-        grid-template-columns: 1fr 1fr;
         flex-wrap: wrap;
         gap: 20px;
     }
@@ -446,16 +445,13 @@
         font-size: 15px;
     }
 
-    .services_area {
-        padding-top: 0;
-    }
-
     .singal-services-page .services_area-info {
         grid-template-columns: 100% !important;
     }
 
     .services_area-info_tab .nav-link {
         padding: 13px;
+        font-size: 14px;
     }
 
     .singal-services-page .service_box-image {
@@ -530,6 +526,16 @@
     .owl-dot {
         width: 12px !important;
         height: 12px !important;
+    }
+
+    .copyright_area .description{
+        text-align: center;
+    }
+
+    .copyright_area .social_links{
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
     }
    
 }

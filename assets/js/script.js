@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-  $(".header_menu_cross").click(function(){
-    $(".header_main_menu").removeClass("active")
+  $(".menu_dismiss").click(function(){
+    $(".responsive_navbar").removeClass("active")
   })
   $(".menu_trigger").click(function(){
-    $(".header_main_menu").addClass("active");
+    $(".responsive_navbar").addClass("active");
   })
 
   $('.header_main_menu li a').click(function(){
