@@ -25,198 +25,131 @@
 @media (min-width: 767px) and (max-width: 992px) {
 
     h1 {
-        font-size: 37px;
-        line-height: 57px;
+        font-size: 38px;
     }
 
     h2 {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 32px;
     }
 
-    h3 {
-        font-size: 22px;
-        line-height: 30px;
+    .description p {
+        font-size: 16px;
     }
 
-    .description-text p {
+    .caption {
         font-size: 15px;
-        line-height: 23px;
     }
 
-    .rounded_btn {
-        font-size: 15px;
-        padding: 10px 32px;
+    .header_area .col-md-4{
+        display: none;
     }
-
-    .border_btn {
-        font-size: 15px;
-        padding: 10px 32px;
-    }
-
-    .header_top_right ul {
-        justify-content: center;
-    }
-
-    .logo_img img {
-        width: 122px;
-    }
-
-    .header_main_menu {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        width: 300px;
-        height: 100%;
-        background-color: var(--primary-color);
-        align-items: flex-start;
-        padding: 30px 30px 30px 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.4s ease;
-    }
-      
-    .header_main_menu.active {
-        left: 0;
-        opacity: 1;
-        pointer-events: auto;
-    }
-      
-
-    .header_main_menu ul{
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        gap: 30px;
-    }
-
-    .header_main_menu ul li a{
-        color: var(--white-color);
-    }
-
-    .header_menu_cross{
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--white-color);
-        background-color: transparent;
-        border-radius: 100%;
-        cursor: pointer;
-        color: var(--white-color);
-        transform: translate(-33px, -8px);
-    }
-
-    .header_main_right .rounded_btn{
+    
+    .header_logo {
         display: none;
     }
 
-    .menu_trigger{
-        display: flex;
+    .header_area-info {
+        float: none;
     }
 
-    .hero_area_image {
-        float: right;
-        width: 380px;
-        height: 440px;
+    .header_area-info ul {
+        justify-content: space-around;
     }
 
-    .text-circle-shape {
-        position: absolute;
-        top: 0;
-        width: 250px;
+    .header_mobail-logo {
+        display: inline-block;
+        width: 146px;
     }
 
-    .story_area {
-        padding: 60px 0 60px 0;
+    .header_main_menu {
+        display: none;
     }
 
-    .story_area_card_wraper {
-        margin-top: 50px;
+    .header_main-right .common_btn{
+        display: none;
     }
 
-    .treatment_area {
-        padding: 60px 0 60px 0;
-        background-color: var(--common-bg);
+    .menu_trigger {
+        display: block;
     }
 
-    .common_card_content .description-text p {
-        font-size: 15px;
-        line-height: 21px;
+    .hero_area {
+        padding: 94px 0;
+        height: 446px;
+    }
+
+    .services_area-title {
+        margin-bottom: 32px;
+    }
+
+    .services_area-info {
+        grid-template-columns: 100%;
+    }
+
+    .services_area-info_tab .nav-pills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .view_all {
+        display: none;
+    }
+
+    .contact_card-wraper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .services_card-image::after {
+        font-size: 25px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .singal-services-page .services_area-info {
+        grid-template-columns: 100% !important;
+    }
+
+    .services_area-info_tab .nav-link {
+        padding: 13px;
+    }
+
+    .contact-page .appointment_book-form ul {
+        width: 50%;
+    }
+
+    .doctors_area {
+        padding: 50px 0;
+    }
+
+    .doctors_area-title {
+        margin-bottom: 50px;
+    }
+
+    .doctor_profile-card {
+        height: 480px;
+        margin: 30px 0;
+    }
+
+    .doctor_profile-image {
+        height: 300px;
+    }
+
+    .doctor_profile-content {
+        padding: 20px;
+    }
+
+    .doctor_name {
+        font-size: 17px;
+    }
+
+    .doctor_category {
+        font-size: 16px;
     }
 
     .owl-dots {
-        margin-top: 35px;
-    }
-
-    .happy_client_area {
-        margin: 50px 0;
-        padding: 45px 30px 45px 45px;
-    }
-
-    .happy_client_image_singal-1 {
-        width: 234px;
-        height: 143px;
-        top: -64px;
-    }
-
-    .happy_client_image_singal-2 {
-        width: 206px;
-        height: 145px;
-        left: 100px;
-    }
-
-    .happy_client_image_singal-3 {
-        width: 239px;
-        height: 136px;
-        top: 149px;
-    }
-
-    .client_reviews {
-        padding: 45px 0 45px 0;
-    }
-
-    .client_reviews_content h3 {
-        font-size: 22px;
-    }
-
-    .client_avater {
-        width: 75px;
-        height: 75px;
-    }
-
-    .faq_area {
-        padding: 60px 0 60px 0;
-    }
-
-    .faq_area_right {
-        padding-left: 0;
-    }
-
-    .faq_area_right .accordion {
-        padding: 0;
-    }
-
-    .blog_area {
-        padding: 60px 0 60px 0;
-    }
-
-    .blog_area .common_card_wraper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .our_info_area {
-        padding: 50px 0px 50px 0px;
-    }
-
-    .our_info_left h3 {
-        font-size: 16px;
-    }
-
-    .our_info_right ul li {
-        font-size: 16px;
+        margin-top: 50px;
     }
 
 }
@@ -224,392 +157,402 @@
 /* SM Small Device :320px. */
 @media only screen and (max-width: 766.99px) {
 
-    
     h1 {
-        font-size: 24px;
-        line-height: 57px;
+        font-size: 28px;
+        line-height: 40px;
     }
 
     h2 {
+        font-size: 24px;
+    }
+
+    h3 {
         font-size: 20px;
         line-height: 35px;
     }
 
-    h3 {
-        font-size: 18px;
-        line-height: 30px;
-    }
-
-    h4 {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .description-text p {
-        font-size: 13px;
+    .description p {
+        font-size: 14px;
         line-height: 20px;
     }
 
-    .rounded_btn {
+    .caption {
         font-size: 12px;
-        padding: 10px 32px;
     }
 
-    .border_btn {
-        font-size: 12px;
-        padding: 10px 32px;
+    .common_btn {
+        padding: 10px 26px;
+        font-size: 14px;
     }
 
-    .header_top_right ul {
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
+    .hero_area .secondry_circle {
+        position: absolute;
+        left: -100px;
+        top: -100px;
+        width: 200px;
+        height: 200px;
     }
 
-    .header_top_right ul li a {
-        border-right: none;
-        border-bottom: 2px solid var(--primary-color);
-        padding-bottom: 10px;
-        font-size: 12px;
-        border-bottom: 1px solid;
+    .common-hero_area h1{
+        text-align: left;
     }
 
-    .header_top_right ul li a svg{
-        width: 12px;
+    .learn_more-btn {
+        font-size: 13px;
     }
 
-    .header_top_right ul li a i{
-        font-size: 12px;
-    }    
+    .header_area .col-md-4{
+        display: none;
+    }
+    
+    .header_logo {
+        display: none;
+    }
 
-    .logo_img img {
-        width: 90px;
+    .header_area-info {
+        float: none;
+    }
+
+    .header_area-info ul {
+        justify-content: space-around;
+    }
+
+    .header_area-info ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header_area-info ul li a {
+        font-size: 13px;
+    }
+
+    .header_area-info ul li img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .header_area-info ul li a span {
+        font-size: 11px !important;
+    }
+
+    .header_mobail-logo {
+        display: inline-block;
+        width: 128px;
     }
 
     .header_main_menu {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        width: 300px;
-        height: 100%;
-        background-color: var(--primary-color);
-        align-items: flex-start;
-        padding: 30px 30px 30px 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.4s ease;
-    }
-      
-    .header_main_menu.active {
-        left: 0;
-        opacity: 1;
-        pointer-events: auto;
-    }
-      
-
-    .header_main_menu ul{
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        gap: 30px;
-    }
-
-    .header_main_menu ul li a{
-        color: var(--white-color);
-    }
-
-    .header_menu_cross{
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--white-color);
-        background-color: transparent;
-        border-radius: 100%;
-        cursor: pointer;
-        color: var(--white-color);
-        transform: translate(-33px, -8px);
-    }
-
-    .header_main_right .rounded_btn{
         display: none;
     }
 
-    .menu_trigger{
-        display: flex;
+    .header_main-right .common_btn{
+        display: none;
+    }
+
+    .menu_trigger {
+        display: block;
     }
 
     .hero_area {
-        padding: 250px 0 40px 0;
+        padding: 67px 0;
+        height: 319px;
     }
 
-    .hero_area_content {
-        margin: 30px 0 0 0;
-    }
-
-    .hero_area_content h1, .hero_area_content .description-text p{
+    .hero_area-content {
         text-align: center;
     }
 
-    .hero_area_content .rounded_btn {
-        display: flex;
-        width: fit-content;
-        margin: auto;
-    }
-
-    .hero_area_image {
-        width: 100%;
-        height: 280px;
-    }
-
-    .text-circle-shape {
-        position: absolute;
-        top: 0;
-        width: 185px;
-    }
-
-    .story_area {
-        padding: 40px 0 40px 0;
-    }
-
-    .story_area h2, .story_area .description-text p{
-        text-align: center;
-    }
-
-    
-    .story_area .rounded_btn {
-        display: flex;
-        width: fit-content;
-        margin: auto;
-    }
-
-    .story_area_card_wraper {
-        margin-top: 50px;
-    }
-
-    .story_area_card_item {
-        height: 200px;
-        border-radius: 14px;
-    }
-
-    .treatment_area {
-        padding: 40px 0 40px 0;
-        background-color: var(--common-bg);
-    }
-
-    .treatment_area h2{
-        text-align: center;
-    }
-
-    .treatment_area .rounded_btn {
-        display: flex;
-        width: fit-content;
-        margin: auto;
-    }
-
-    .common_card_image {
-        width: 100%;
-        height: 197px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    .common_card_content .description-text p {
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    .common_card_content .border_btn {
-        font-size: 12px;
-    }
-
-    .owl-dots {
-        margin-top: 35px;
-    }
-
-    .owl-dot{
-        width: 12px !important;
-        height: 12px !important;
-    }
-
-    .happy_client_area {
-        margin: 40px 0;
-        padding: 25px 30px 25px 30px;
-    }
-
-    .happy_client_area {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-auto-flow: row-reverse;
-    }    
-
-    .happy_client_image_singal{
+    .book_card-area {
         display: none;
     }
 
-    /* .happy_client_image_singal-1 {
-        width: 234px;
-        height: 143px;
-        top: -64px;
+    .medical_area {
+        padding-top: 48px;
     }
 
-    .happy_client_image_singal-2 {
-        width: 206px;
-        height: 145px;
-        left: 100px;
+    .medical_area-content .learn_more-btn {
+        margin-top: 12px;
     }
 
-    .happy_client_image_singal-3 {
-        width: 239px;
-        height: 136px;
-        top: 149px;
-    } */
-
-    .client_reviews {
-        padding: 40px 0 40px 0;
+    .medical_area-image {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin-top: 40px;
     }
 
-    .client_reviews_content h3 {
-        font-size: 22px;
+    .services_area-title {
+        margin-bottom: 32px;
     }
 
-    .client_reviews_content h2{
+    .services_area-info {
+        grid-template-columns: 100%;
+    }
+
+    .services_area-info_tab .nav-pills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view_all {
+        display: none;
+    }
+
+    .service_box-content {
+        grid-template-columns: 100%;
+    }
+
+    .service_box-image {
+        height: 150px;
+    }
+
+    .service_box-content h3 {
+        font-size: 18px;
         text-align: center;
     }
 
-    .client_profile_area {
-        display: flex;
-        flex-direction: column;
-        gap: 30px 0;
+    .service_box-content ul {
+        gap: 15px 30px;
+        margin: 24px 0 32px 25px;
     }
 
-    .client_profile {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .client_avater {
-        width: 75px;
-        height: 75px;
-    }
-
-    .faq_area {
-        padding: 40px 0 40px 0;
-    }
-
-    .faq_area_left form input, .faq_area_left form textarea {
-        border-radius: 12px;
-    }
-
-    .faq_area_left form textarea {
-        height: 180px;
-    }
-
-    .faq_area_right {
-        padding-left: 0;
-    }
-
-    .faq_area_right .accordion {
-        padding: 0;
-    }
-
-    .faq_area_right  .accordion-button {
-        font-size: 17px;
-    }
-
-    .faq_area_right .accordion-body {
+    .service_box-content ul li {
         font-size: 12px;
-        line-height: 20px;
     }
 
-    .blog_area {
-        padding: 40px 0 40px 0;
+    .service_box-content .description p {
+        font-size: 12px;
     }
 
-    .blog_area h2{
+    .specialties_area {
+        padding-top: 0;
+    }
+
+    .specialties_area-title {
+        margin-bottom: 40px;
+    }
+
+    .specialties_card-wraper {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .specialties_card {
+        font-size: 13px;
+        gap: 15px;
+        min-height: 130px;
+    }
+
+    .services_card-image::after {
+        font-size: 25px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .appointment_book {
+        padding: 40px 0;
+    }
+
+    .appointment_book-content {
         text-align: center;
+        margin-bottom: 40px;
     }
 
-    .blog_area .rounded_btn {
-        display: flex;
-        width: fit-content;
-        margin: auto;
+    .appointment_book-form {
+        min-height: fit-content;
     }
 
-    .blog_area .common_card_wraper {
+    .contact-page .appointment_book-form ul {
+        width: 50%;
+    }
+
+    .news_area-wraper {
+        display: block !important;
+    }
+
+    .news_area-wraper .owl-stage-outer,
+    .news_area-wraper .owl-stage,
+    .news_area-wraper .owl-item {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .news_card-wraper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100% !important;
+    }
+
+    .news_card {
+        min-height: fit-content;
+        grid-template-columns: 100%;
+    }
+
+    .news_card-image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .contact_area-title {
+        margin-bottom: 40px;
+    }
+
+    .contact_card-wraper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
-    .our_info_area {
-        padding: 50px 0px 50px 0px;
+    .contact_card {
+        min-height: 186px;
     }
 
-    .our_info_right {
-        margin-top: 20px;
+    .contact-page .contact_card-wraper {
+        grid-template-columns: repeat(1,1fr);
     }
 
-    .our_info_right ul {
-        grid-template-columns: repeat(1, 1fr);
+    .about-page .services_area .service_box-content {
+        grid-template-columns: 100%;
     }
 
-    .our_info_left h3 {
+    .services_card {
+        height: fit-content;
+    }
+
+    .services_card-image {
+        height: 200px;
+    }
+
+    .services_card-content {
+        padding: 45px 20px 32px 20px;
+    }
+
+    .services_card-content p {
+        font-size: 15px;
+    }
+
+    .blog_post-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .blog_post-content p{
+        font-size: 15px;
+    }
+
+    .services_area {
+        padding-top: 0;
+    }
+
+    .singal-services-page .services_area-info {
+        grid-template-columns: 100% !important;
+    }
+
+    .services_area-info_tab .nav-link {
+        padding: 13px;
+    }
+
+    .singal-services-page .service_box-image {
+        height: 254px;
+    }
+
+    .map_area iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .contact_area {
+        padding-top: 0;
+    }
+
+    .contact-page  .appointment_book-form textarea {
+        min-height: 135px;
+    }
+
+    .doctors_area {
+        padding: 40px 0;
+    }
+
+    .doctors_area-title {
+        margin-bottom: 40px;
+    }
+
+    .doctor_profile-card {
+        height: auto;
+        min-height: 400px;
+        margin: 20px 0;
+        transform: translate3d(0, 0, 0) scale(1) !important; /* Reset carousel scaling on mobile */
+    }
+
+    .doctor_profile-card img {
+        transform: scale(1) !important;
+    }
+
+    .doctor_profile-card.center .item {
+        transform: scale(1) !important;
+    }
+
+    .doctor_profile-image {
+        height: 250px;
+    }
+
+    .doctor_profile-content {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .doctor_name {
         font-size: 16px;
     }
 
-    .our_info_right ul li {
-        font-size: 13px;
-    }
-
-    .footer_area {
-        padding-top: 40px;
-    }
-
-    .footer_logo {
-        width: 115px;
-        height: 40px;
-    }
-
-    .footer_area_item .description-text p {
-        font-size: 13px;
-    }
-
-    .social_icons ul a {
-        font-size: 20px;
-        width: 35px;
-        height: 35px;
-    }
-
-    .footer_area_item .footer_menu li a {
+    .doctor_category {
         font-size: 14px;
-    }
-    
-    .footer_area_item form input {
-        width: 100%;
-        height: 46px;
-        font-size: 14px;
-    }
- 
-    .footer_area_item form input::placeholder{
-        font-size: 14px;
+        letter-spacing: 2px;
+        margin: 8px 0;
     }
 
-    .copyright_area .description-text p{
-        font-size: 12px;
+    .doctor_profile-btn {
+        font-size: 14px;
+        padding: 10px;
     }
 
+    .owl-dots {
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    .owl-dot {
+        width: 12px !important;
+        height: 12px !important;
+    }
+   
 }
 
 /* LandScape Mobail device */
 @media (min-width: 575px) and (max-width: 768px) {
 
-    .hero_area_image {
-        width: 80%;
-        height: 380px;
-        display: block;
-        float: none;
-        margin: auto;
+    .contact_card-wraper {
+        grid-template-columns: repeat(2, 1fr);
     }
-   
+
+    .contact-page .contact_card-wraper {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .news_card-wraper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .news_card {
+        min-height: fit-content;
+        grid-template-columns: 100%;
+    }
 }

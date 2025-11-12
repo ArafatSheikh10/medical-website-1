@@ -7,34 +7,85 @@ $(document).ready(function(){
     $(".header_main_menu").addClass("active");
   })
 
-  $('.header_main_right ul li a').click(function(){
-    $('.header_main_right ul li a').removeClass("active");
+  $('.header_main_menu li a').click(function(){
+    $('.header_main_menu li a').removeClass("active");
     $(this).addClass("active");
   });
 
-  $('.treatment_area_card_wraper').owlCarousel({
+  $('.view_all').click(function() {
+    $('#hidden-options').slideToggle(400); 
+  });
+
+  $('select').niceSelect();
+
+  $('.doctor_profile-card_wraper').owlCarousel({
     loop:true,
     margin:20,
     nav:false,
     dots: true,
     dotsEach:true,
-    autoplay:true,
-    autoplayTimeout:2000,
+    centerMode: true,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    edgeFriction: 0.05,
+    infinite: true, 
     responsive:{
         0:{
             items:1
         },
-        567:{
-            items:2
-        },
-        1000:{
+        768:{
             items:3
         }
     }
-  })
+  });
 
-  // client_reviews_content_wraper
-  $('.client_reviews_content_wraper').owlCarousel({
+  // news_area-wraper - Only initialize on tablet/desktop (not mobile)
+  function initNewsCarousel() {
+    if ($(window).width() > 767) {
+      if (!$('.news_area-wraper').hasClass('owl-loaded')) {
+        $('.news_area-wraper').owlCarousel({
+          loop:true,
+          margin:20,
+          nav:false,
+          dots: true,
+          dotsEach:true,
+          autoplay:true,
+          autoplayTimeout:2000,
+          responsive:{
+              768:{
+                  items:2
+              },
+              992:{
+                  items:2
+              }
+          }
+        });
+      }
+    } else {
+      // Destroy carousel on mobile
+      if ($('.news_area-wraper').hasClass('owl-loaded')) {
+        $('.news_area-wraper').trigger('destroy.owl.carousel');
+        $('.news_area-wraper').removeClass('owl-carousel owl-loaded');
+        $('.news_area-wraper').find('.owl-stage-outer').children().unwrap();
+        $('.news_area-wraper').find('.owl-stage').children().unwrap();
+      }
+    }
+  }
+  
+  // Initialize on page load
+  initNewsCarousel();
+  
+  // Handle window resize
+  $(window).on('resize', function() {
+    initNewsCarousel();
+  });
+
+  // Testiomonial Area Start
+
+  $('.testiomonial_wraper').owlCarousel({
     loop:true,
     margin:20,
     nav:false,
@@ -47,7 +98,8 @@ $(document).ready(function(){
             items:1
         },
     }
-  })
+  });
+
 
 });
 
