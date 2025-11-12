@@ -532,6 +532,10 @@
         text-align: center;
     }
 
+    .copyright_area .description p{
+        font-size: 13px;
+    }
+
     .copyright_area .social_links{
         justify-content: center;
         text-align: center;
